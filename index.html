@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLANLOG</title>
+
+    <!-- jQuery & 스크립트 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.smoothwheel.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="css/planlog.css" />
+
+    <!-- 폰트 (프리텐다드 + 레코체) -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css">
+    <style>
+        @font-face {
+            font-family: 'Recipekorea 레코체 FONT';
+            src: url('/font/Recipekorea.otf') format('opentype');
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div id="logo">
+            <a href="#"><img src="images/logo.png" alt="PLANLOG 로고" /></a>
+        </div>
+    </header>
+
+    <!-- 메인 비주얼 -->
+    <section id="front">
+        <div id="title">
+            <p>편리한 to do list 앱<br>'PLANLOG'</p>
+            <span>5조 | 박지연 박민주 이경민 김민우</span>
+        </div>
+        <div id="img">
+            <img src="images/front.jpg" alt="front image" />
+        </div>
+    </section>
+
+    <!-- 콘텐츠 섹션들 -->
+    <main id="contents">
+        <!-- 섹션 1 -->
+        <section>
+            <div class="img" style="flex: 1 1 50%; max-width: 45%;">
+                <img src="images/login.png" alt="로그인 화면" style="width: 100%; height: auto;" />
+            </div>
+            <div class="text" style="flex: 1 1 50%; max-width: 45%;">
+                <p class="heading">편리한 일정 관리 어플</p>
+                <p>
+                    하루하루 챙기기 힘들다면? PLANLOG로 간편하게 정리해보세요!
+                    일정, 운동, 약속까지 한 번에 관리할 수 있어요. (SNS 및 게스트 로그인 지원)
+                </p>
+            </div>
+        </section>
+
+        <!-- 섹션 2 - 반대 정렬 -->
+        <section class="reverse">
+            <div class="img" style="flex: 1 1 50%; max-width: 45%;">
+                <img src="images/calendar_mockup.png" alt="캘린더 기능" />
+            </div>
+            <div class="text" style="flex: 1 1 50%; max-width: 45%;">
+                <p class="heading">캘린더 기능</p>
+                <p>
+                    오늘 뭐하지? PLANLOG 캘린더로 한눈에 확인하세요!
+                    내가 세운 계획이 얼마나 실천됐는지도 그래프로 쉽게 볼 수 있어요.
+                </p>
+            </div>
+        </section>
+
+        <!-- 섹션 3 -->
+        <section>
+            <div class="img" style="flex: 1 1 50%; max-width: 45%;">
+                <img src="images/todo_mockup.png" alt="투두리스트" />
+            </div>
+            <div class="text" style="flex: 1 1 50%; max-width: 45%;">
+                <p class="heading">편리한 일정 추가</p>
+                <p>
+                    일정 추가? 어렵지 않아요!
+                    필요한 내용만 쏙쏙 적으면 끝!
+                    완료한 일정은 자동으로 정리돼서, 지금 해야 할 일만 딱 보여요.
+                </p>
+            </div>
+        </section>
+
+        <!-- 섹션 4 - 반대 정렬 -->
+        <section class="reverse">
+            <div class="img" style="flex: 1 1 50%; max-width: 45%;">
+                <img src="images/diary_mockup.png" alt="다이어리 기능" />
+            </div>
+            <div class="text" style="flex: 1 1 50%; max-width: 45%;">
+                <p class="heading">다이어리 기능 지원</p>
+                <p>
+                    하루의 순간을 사진과 함께 담아보세요.
+                    놓치고 싶지 않은 기억들, 예쁘게 남겨두면 돼요.
+                </p>
+            </div>
+        </section>
+
+        <!-- 섹션 5: 가이드라인 -->
+        <section class="guide">
+            <img src="images/guide_line.png" alt="가이드라인 이미지" />
+        </section>
+    </main>
+</body>
+
+</html>

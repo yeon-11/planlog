@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+/* ✅ 폰트 불러오기 */
+@font-face {
+    font-family: 'Reco';
+    src: url('../font/Recipekorea.otf') format('opentype');
+}
+
+:root {
+    --primary: #69ACB7;
+}
+
+/* 🔹 공통 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard', sans-serif;
+    color: #000;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+/* 🔹 헤더 */
+header {
+    width: 100%;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 28px;
+}
+
+#logo img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+/* 🔹 메인 비주얼 */
+#front {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 5% 0.5rem;
+    gap: 0.5rem;
+}
+
+#img {
+    margin: 0;
+    padding: 0;
+}
+
+#img img {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+#title {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#title p {
+    font-family: 'Reco', sans-serif;
+    font-size: 6vw;
+    color: var(--primary);
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+
+#title span {
+    font-size: 3vw;
+    margin: 0.3rem 0 0;
+    padding: 0;
+    display: block;
+}
+
+/* 🔹 콘텐츠 섹션 */
+#contents {
+    width: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 5%;
+    gap: 40px;
+    flex-wrap: nowrap;
+}
+
+section.reverse {
+    flex-direction: row-reverse;
+}
+
+section .img,
+section .text {
+    flex: 1;
+    max-width: 50%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+section .img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* 텍스트 */
+section .text .heading {
+    font-family: 'Reco', sans-serif;
+    font-size: 1.8rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+section .text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* 🔹 가이드 섹션 */
+section.guide {
+    text-align: center;
+    padding: 40px 5%;
+}
+
+section.guide img {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* 🔹 반응형 */
+@media (max-width: 768px) {
+    #front {
+        padding: 2rem 5% 0.3rem;
+        gap: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #title {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    #title p {
+        margin: 0;
+        padding: 0;
+        font-size: 6.5vw;
+        line-height: 1.2;
+        word-break: keep-all;
+    }
+
+    #title span {
+        font-size: 3.4vw;
+        margin-top: 0.2rem;
+        padding: 0;
+        display: block;
+        color: #333;
+    }
+
+    #img {
+        padding: 0;
+        margin: 0;
+    }
+
+    #img img {
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        width: 100%;
+        max-width: 85vw;
+        height: auto;
+        object-fit: contain;
+    }
+
+    section,
+    section.reverse {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 5%;
+        text-align: center;
+    }
+
+    section .img,
+    section .text {
+        max-width: 100%;
+    }
+
+    section .img img {
+        width: 100%;
+        max-width: 90vw;
+        height: auto;
+    }
+
+    section .text .heading {
+        font-size: 1.3rem;
+    }
+
+    section .text p {
+        font-size: 0.9rem;
+        word-break: keep-all;
+        line-height: 1.6;
+    }
+
+    section.guide {
+        padding: 20px 5%;
+    }
+
+    section.guide img {
+        width: 100%;
+        max-width: 90vw;
+    }
+}
